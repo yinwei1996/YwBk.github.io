@@ -1,0 +1,263 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+#bg{
+	background: url(../message/1332.jpg) no-repeat center center;
+	background-size:cover;
+	width: 100%;
+	height: 100%;
+
+	position: fixed;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font: 14px/12px "宋体";
+}
+img{
+	vertical-align: top;
+}
+p{
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+.list{
+	box-sizing:border-box;
+	background:rgba(253,253,253,0.5);
+	width: 140px;
+	border: 1px solid black;
+	border-radius: 5px;
+	display:none;
+	position: absolute;
+	z-index: 4;
+}
+.list li{
+	padding: 1px;
+	position: relative;
+	box-sizing:border-box;
+	/* border-bottom: 1px solid black; */
+}
+.list li:hover{
+	cursor: pointer;
+}
+.list li{
+	text-indent: 20px;
+	display: block;
+	color: black;
+	font:bolder 16px/30px "宋体";
+}
+.listhover{
+	background:rgba(0,0,0,0.4);
+}
+.list ul{
+	width: 100%;
+	background:rgba(253,253,253,0.5);
+	position: absolute;
+	border-radius: 5px;
+	top: 0;
+	border: 1px solid black;
+}
+.menu{
+	position: relative;
+}
+.menu div{
+	width: 90px;	
+	height: 80px;
+	float: left;
+	margin: 5px;
+	position: absolute;
+	z-index: 4;
+}
+.header{
+	width: 100%;
+	height: 60px;
+	float: left;
+	position: absolute;
+	z-index: 4;
+	display: none;
+}
+.header a{
+	font:bolder 20px/60px "宋体";
+	color:white;
+}
+.mendivhover{
+	box-sizing:border-box;
+	background: rgba(233,244,243,0.4);
+	border-radius: 6px;
+}
+.floor span{
+	display: block;
+	width: 100%;
+	height:60px;
+	background: url(../message/file.png) no-repeat center 0;
+}
+.text span{
+	display: block;
+	height:60px;
+	width: 100%;
+	background: url(../message/TXT-1.png) no-repeat center 0;
+}
+.delet{
+	width: 90px;	
+	margin: 5px;
+	position: absolute;
+	left: 7px;
+}
+.hover{
+	box-sizing:border-box;
+	background: rgba(0,0,0,0.4);
+	border-radius: 6px;
+}
+.active{
+	box-sizing:border-box;
+	background: rgba(233,244,243,0.6);
+	border-radius: 6px;
+}
+.header{
+
+}
+/* .delet:hover{
+	box-sizing:border-box;
+	background: rgba(233,244,243,0.4);
+	border-radius: 6px;
+} */
+div img,
+.delet img{
+	/* box-sizing:border-box; */
+	padding:2px 13px;
+	height: 49px;
+	width: 51px;
+}
+div p,
+.delet p{
+	text-align: center;
+	font:bold 14px/20px "宋体";
+	color: white;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.clearfix:after{
+	display: block;
+	content: "";
+	clear:both;
+}
+.rDelete{
+	box-sizing: border-box;
+    background: rgba(253,253,253,0.5);
+    width: 160px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+}
+.rDelete{
+	padding: 1px;
+    position: relative;
+}
+.rDelete li a{
+	text-indent: 20px;
+    display: block;
+    color: black;
+    font: 14px/20px "宋体";
+}
+.rDelete li:hover{
+	background:rgba(0,0,0,0.4);
+}
+.repetition p{
+	font:bold 16px/150px "宋体";
+}
+.repetition{
+	width:400px;
+	height: 250px;
+	border: 1px solid black;
+	background:rgba(253,253,253,0.5);
+	position: fixed;
+	left: 30%;
+	text-align: center;
+	border-radius: 10px;
+	/* display: none; */
+}
+.repetition a{
+	display: block;
+	font:bold 16px/50px "宋体";
+	color: white;
+}
+.bigdiv{
+	border: 1px solid black;
+	box-sizing:border-box;
+	position: absolute;
+	/* z-index: 4; */
+}
+input{
+	display:none;
+}
+label{
+	display:block;
+}
+/* 图片音频文件的双击显示层 */
+.dbclickdp{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	display: none;
+	text-align: center;
+}
+.dbclickdp img{
+	margin-top: 20px;
+	width: 500px;
+	height: 500px;
+}
+.dbclickdp a{
+	display: block;
+	width: 70px;
+	height: 70px;
+	box-sizing:border-box;
+	border-radius: 10px;
+	border: 1px solid white;
+	font: 60px/70px "宋体";
+	text-align: center;
+	color: white;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.image span{
+	display: block;
+	height:60px;
+	width: 100%;
+	background: url(../message/image-1.png) no-repeat center 0;
+}
+.video span{
+	display: block;
+	height:60px;
+	width: 100%;
+	background: url(../message/video.png) no-repeat center 0;
+}
+#video{
+	margin-top: 100px;
+}
+.audio span{
+	display: block;
+	height:60px;
+	width: 100%;
+	background: url(../message/audio-1.png) no-repeat center 0;
+}
+#audio{
+	margin-top: 100px;
+}
